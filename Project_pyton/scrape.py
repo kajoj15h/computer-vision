@@ -2,14 +2,15 @@ from google_images_download import google_images_download
 
 response = google_images_download.googleimagesdownload()
 
-search_querries = ['black dress', 'white dress', 'black shoes', 'white shoes', 'black sweatshirt','red sweatshirt', 'red t-shirt', 'red dress']
+search_querries = ['black dress', 'white dress', 'black shoes', 'white shoes', 'black sweatshirt','red sweatshirt',
+                   'red t-shirt', 'red dress']
 
 
 def download_images(query):
     arguments = {
         'keywords': query,
         'format': 'jpg',
-        'limit': 100,
+        'limit': 60,
         'print_urls': True,
         'size': 'medium',
         'aspect_ratio': 'square',
@@ -22,7 +23,7 @@ def download_images(query):
         arguments = {
             'keywords': query,
             'format': 'png',
-            'limit': 100,
+            'limit': 60,
             'print_urls': True,
             'size': 'medium',
             'chromedriver': r'‪C:\Users\kkrol\Desktop\chromedriver\chromedriver.exe'
